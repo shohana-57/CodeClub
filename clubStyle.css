@@ -14,7 +14,7 @@ body{
     /* color:white;*/
 }
 .sidebar a{
-    padding:10px 15px;
+    padding:10px 15px 10px 5px;
     text-decoration:none;
     font-size:18px;
     color:rgb(87, 24, 24);
@@ -23,4 +23,22 @@ body{
 .sidebar a:hover{
     background-color: #555;
     color:white;
+}
+.sidebar h1{
+    color:rgb(33, 12, 12);
+    text-align:center;
+}
+.container{
+    margin-left:200px;
+    padding:20px;
+    display:flex;
+}
+
+.sidebar ul li{
+    padding:0;
+    text-align:center;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding:0;
 }
