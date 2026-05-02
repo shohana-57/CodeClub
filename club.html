@@ -5,37 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeClub Portfolio</title>
     <link rel="stylesheet" href="clubStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+    <script src="script.js"> </script>
 </head>
+
+
 <body>
     <div class="container">
         
         <!-- Sideber -->
-     <div class="sidebar">
+     <aside class="sidebar" id="sidebar">
+      <div class=""sidebar-header>
+       <span class="logo-icon">&lt;/&gt;</span>
 
-        <h1>CodeClub</h1>
+        <span class="logo-text"><h1>CodeClub</h1></span>
+        </div>
 
-        <ul>
-         <li><a href="#home">Home</a></li> 
-         <li><a href="#about">About Us</a></li>
-         <li><a href="#projects">Projects</a></li>
-         <li><a href="#events">Events</a></li>
-         <li><a href="#resources">Resources</a></li>
-         <li><a href="#members">Members</a></li>
-         <li><a href="#gallery">Gallery</a></li>
-         <li><a href="#contact">Contact</a></li>
-         <li><a href="#join">Join Us</a></li>
-         <li><a href="#feedback">Feedback</a></li>
+        <nav class="sidebar-nav" id="sidebarNav">
+          <ul>
+         <li><a href="#home"      class="nav-link active" data-section="home">        <span class="nav-icon">🏠</span> Home</a></li> 
+         <li><a href="#about"     class="na-link"         data-section="about">       <span class="nav-icon">ℹ️</span> About Us</a></li>
+         <li><a href="#projects"  class="nav-link"        data-section="projects">    <span class="nav-icon">💻</span> Projects</a></li>
+         <li><a href="#events"    class="nav-link"        data-section="events">      <span class="nav-icon">📅</span> Events</a></li>
+         <li><a href="#resources" class="nav-link"        data-section="resources">   <span class="nav-icon">📚</span> Resources</a></li>
+         <li><a href="#members"   class="nav-link"        data-section="members">     <span class="nav-icon">👥</span> Members</a></li>
+         <li><a href="#gallery"   class="nav-link"        data-section="gallery">     <span class="nav-icon">🖼️</span> Gallery</a></li>
+         <li><a href="#contact"   class="nav-link"        data-section="contact">     <span class="nav-icon">📧</span> Contact</a></li>
+         <li><a href="#join"      class="nav-link"        data-section="join">        <span class="nav-icon">➕</span> Join Us</a></li>
+         <li><a href="#feedback"  class="nav-link"        data-section="feedback">    <span class="nav-icon">💬</span> Feedback</a></li>
         </ul>
-     </div>
+
+        </nav>
+
+       
+      </aside>
 
         <!-- Main Content -->
         <div class="main-content">
             <!-- slide show -->
              <section id="home" class="section">
                 <div class="slideshow">
-                <img src="site_coding_12.jpg" alt="Slide 1">
-                <!-- <img src="images/slide2.jpg" alt="Slide 2">
-                <img src="images/slide3.jpg" alt="Slide 3"> -->
                  </div>
                 <h2>Welcome to CodeClub</h2>
                 <p>Your gateway to learning and excelling in coding!</p>
@@ -64,16 +73,99 @@
                     <h3>Project 3: Open Source Library</h3>
                     <p>An open-source library of reusable code snippets and components that can be easily integrated into various projects.</p>
                   </div>
-                  
+
              </section>
 
-             <section id="events" class="section"></section>
-             <section id="resources" class="section"></section>
-             <section id="members" class="section"></section>
-             <section id="gallery" class="section"></section>
-             <section id="contact" class="section"></section>
-             <section id="join" class="section"></section>
-             <section id="feedback" class="section"></section>
+             <section id="events" class="section">
+                  <h2>Upcoming Events</h2>
+                  <ul>
+                     <li><strong>Code Workshop:</strong> Join us for a hands-on coding workshop where we will explore the latest trends and techniques in software development.</li>
+                     <li><strong>Hackathon:</strong> Participate in our upcoming hackathon and collaborate with fellow developers to create innovative solutions to real-world problems.</li>
+                     <li><strong>Guest Speaker Series:</strong> Attend our guest speaker sessions featuring industry experts who will share their insights and experiences in the world of coding.</li>
+                  </ul>
+
+             </section>
+
+             <section id="resources" class="section">
+                  <h2>Resources</h2>
+                  <ul>
+                     <li><a href="https://www.codecademy.com/">Codecademy</a> - An interactive platform offering coding courses in various programming languages.</li>
+                     <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a> - A nonprofit organization that provides free coding lessons and projects to help people learn to code.</li>
+                     <li><a href="https://www.github.com/">GitHub</a> - A web-based platform for version control and collaborative software development.</li>
+                  </ul>
+
+             </section>
+
+
+             <section id="members" class="section">
+                  <h2>Our Members</h2>
+                  <p>Meet our talented and diverse group of members who are passionate about coding and technology.</p>
+                  <ul>
+                     <li><strong>John Doe:</strong> A full-stack developer with expertise in JavaScript and Python.</li>
+                     <li><strong>Jane Smith:</strong> A front-end developer specializing in React and CSS.</li>
+                     <li><strong>Emily Johnson:</strong> A data scientist with a background in machine learning and AI.</li>
+                  </ul>
+
+             </section>
+
+
+             <section id="gallery" class="section">
+                  <h2>Gallery</h2>
+                  <div class="gallery"></div>
+                  </div>
+
+             </section>
+
+
+             <section id="contact" class="section">
+                  <h2>Contact Us</h2>
+                  <p>If you have any questions, suggestions, or would like to get involved with CodeClub, please feel free to reach out to us!</p>
+                  <ul>
+                     <li>Email: <a href="mailto:info@codeclub.com">info@codeclub.com</a></li>
+                     <li>Phone: (123) 456-7890</li>
+                     <li>Address: 123 Code Street, Tech City, Country</li> 
+                  </ul>
+
+             </section>
+
+
+             <section id="join" class="section">
+                  <h2>Join Us</h2>
+                  <p>Ready to become a part of our vibrant coding community? Join CodeClub today and start your coding journey with us!</p>
+                  <form action="submit_form.php" method="post">
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" required>
+
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+
+                     <label for="message">Message:</label>
+                     <textarea id="message" name="message" rows="4" required></textarea>
+
+                     <button type="submit">Submit</button>
+                  </form>
+
+             </section>
+
+
+             <section id="feedback" class="section">
+                  <h2>Feedback</h2>
+                  <p>Your feedback is valuable to us! Please share your thoughts and suggestions to help us improve CodeClub.</p>
+                  <form action="submit_feedback.php" method="post">
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" required>
+
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+
+                     <label for="feedback">Feedback:</label>
+                     <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+                     <button type="submit">Submit</button>
+                  </form>
+
+             </section>
+
              
 
             
