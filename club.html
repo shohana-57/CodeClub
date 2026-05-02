@@ -15,16 +15,16 @@
         
         <!-- Sideber -->
      <aside class="sidebar" id="sidebar">
-      <div class=""sidebar-header>
+      <div class="sidebar-header">
        <span class="logo-icon">&lt;/&gt;</span>
 
         <span class="logo-text"><h1>CodeClub</h1></span>
-        </div>
+     </div>
 
         <nav class="sidebar-nav" id="sidebarNav">
           <ul>
          <li><a href="#home"      class="nav-link active" data-section="home">        <span class="nav-icon">🏠</span> Home</a></li> 
-         <li><a href="#about"     class="na-link"         data-section="about">       <span class="nav-icon">ℹ️</span> About Us</a></li>
+         <li><a href="#about"     class="nav-link"        data-section="about">       <span class="nav-icon">ℹ️</span> About Us</a></li>
          <li><a href="#projects"  class="nav-link"        data-section="projects">    <span class="nav-icon">💻</span> Projects</a></li>
          <li><a href="#events"    class="nav-link"        data-section="events">      <span class="nav-icon">📅</span> Events</a></li>
          <li><a href="#resources" class="nav-link"        data-section="resources">   <span class="nav-icon">📚</span> Resources</a></li>
@@ -41,38 +41,80 @@
       </aside>
 
         <!-- Main Content -->
-        <div class="main-content">
+        <main class="main-content">
             <!-- slide show -->
              <section id="home" class="section">
                 <div class="slideshow">
-                 </div>
-                <h2>Welcome to CodeClub</h2>
-                <p>Your gateway to learning and excelling in coding!</p>
+                   <div class="codebg" id="codeBG"></div>
+                </div>
+                 <div class="slide-inner">
+                   <div class="slide-tag">. CODING COMMUNITY</div>
+                    <h1 class="slide-title">Welcome </br/>
+                    <span class="slide-subtitle">to</span> CodeClub</h1>
+                
+                    <p class="slide-para">Your gateway to learning and excelling in coding!</p>
+                   </div>
             
              </section>
 
              <!-- About -->
-             <section id="about" class="section">
-                <h2>About Us</h2>
-                <p>CodeClub is a community of passionate developers dedicated to learning and sharing knowledge in the field of coding.</p>
+             <section id="about" class="section-about">
+                <div class="about-level">
+                   <div class="about-level-item">
+                       <h2 class="section-title">We Build. <br/>We Innovate. <br/> We Share.</h2>
+                       <p>CodeClub is a community of passionate developers dedicated to learning and sharing knowledge in the field of coding.</p>
+                       <p>We believe in the power of collaboration and continuous learning to drive innovation in the world of technology.</p>
+                   </div>
+                </div>
 
              </section>
 
              <!-- Project -->
-             <section id="projects" class="section">
-                  <h2>Our Projects</h2>
+             <section id="projects" class="section-projects">
+                  <h2 class="section-title">Our Projects</h2>
                   <div class="project">
-                    <h3>Project 1: Code Editor</h3>
-                    <p>A web-based code editor that supports multiple programming languages and provides real-time collaboration features.</p>
-                  </div>
-                  <div class="project">
-                    <h3>Project 2: Learning Platform</h3>
-                    <p>An interactive learning platform that offers coding tutorials, challenges, and quizzes to help users improve their coding skills.</p>
-                  </div>
-                  <div class="project">
-                    <h3>Project 3: Open Source Library</h3>
-                    <p>An open-source library of reusable code snippets and components that can be easily integrated into various projects.</p>
-                  </div>
+                     <div class="project-card">
+                        <div class="project-tag">Web App</div>
+                           <h3>Code Editor</h3>
+                           <p>A web-based code editor that supports multiple programming languages and provides real-time collaboration features.</p>
+
+                           <div class="project-tech">
+                              <span class="tech-item">HTML</span>
+                              <span class="tech-item">CSS</span>
+                              <span class="tech-item">JavaScript</span>
+                           </div>
+
+                           <a href="#" class="project-link">View Project</a>
+                     </div>
+                     <div class="project-card">
+                        <div class="project-tag">EdTech</div>
+                           <h3>Learning Platform</h3>
+                           <p>An interactive learning platform that offers coding tutorials, challenges, and quizzes to help users improve their coding skills.</p>
+
+                           <div class="project-tech">
+                              <span class="tech-item">React</span>
+                              <span class="tech-item">Node.js</span>
+                              <span class="tech-item">MongoDB</span>
+                           </div>
+
+                           <a href="#" class="project-link">View Project</a>
+                           </div>
+
+                           <div class="project-card">
+                              <div class="project-tag">Open Source</div>
+                                 <h3>Open Source Library</h3>
+                                 <p>An open-source library of reusable code snippets and components that can be easily integrated into various projects.</p>
+
+                                 <div class="project-tech">
+                                    <span class="tech-item">Python</span>
+                                    <span class="tech-item">Django</span>
+                                    <span class="tech-item">REST API</span>
+                                 </div>
+
+                                 <a href="#" class="project-link">View Project</a>
+                                 </div>
+
+                     </div>
 
              </section>
 
@@ -165,16 +207,8 @@
                   </form>
 
              </section>
-
-             
-
             
-         </div>
-
-
-    </div>
-   
-   
+            </main>   
      
 </body>
 </html>
